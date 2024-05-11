@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# a program that blocks website pages
+echo ==================================
+echo "WELCOME TO WEBSITES BLOCKER :)"
+sleep 1;echo
+read -p "Please, enter the website URL: " url
+echo "127.0.0.1		"$url"" >> /etc/hosts;echo
+echo "addressing, please wait seconds...";echo
+for _ in {1..5}
+do
+        echo -n '#####'
+        sleep 1
+done;echo
+echo "$url has been permenantly blocked";echo
+echo ==================================;echo
