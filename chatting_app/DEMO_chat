@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Simple chatting simulator app
-if [ "$#" -ne 2 ] && [[ $1 != 'host' ]] || [ "$#" -ne 1 ] 
+if [ "$#" -ne 1 ]
 then
-        echo "Usage: $0 host OR $0 client <server address>"
+        echo "Usage: $0 host OR $0 client"
         exit 1
-elif [[ $1 == 'host' ]] && [ "$#" -eq 1 ]
+elif [ $1 -eq 'host' ]
 then
 	nc -l -p 54321
 elif [[ $1 == 'client' ]] && [ "$#" -eq 2 ]

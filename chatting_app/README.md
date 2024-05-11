@@ -1,3 +1,6 @@
+## NOT FINISHED YET
+
+
 # Functionality:
 - Simple script for chatting between two devices
 - devices must be connected in a network
